@@ -1,16 +1,23 @@
 package net.jababackend.demospringbootjakartafaces.controllers;
 
 import jakarta.enterprise.context.RequestScoped;
-import jakarta.inject.Named;
-import java.util.logging.Logger;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import net.jababackend.demospringbootjakartafaces.service.TestService;
+import org.springframework.stereotype.Controller;
 
-@Named
+import java.io.Serializable;
+
+@Controller
 @RequestScoped
-public class MyBean {
+@Slf4j
+@RequiredArgsConstructor
+public class MyBean implements Serializable {
 
-  private static final Logger logger = Logger.getLogger(MyBean.class.getName());
+  private final TestService testService;
 
   public void printMessage() {
-    logger.info("Button was clicked!");
+
+    log.info("Button was clicked! " + testService.getMessage());
   }
 }
