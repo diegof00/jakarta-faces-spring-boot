@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <ui:param name="path" value="#{request.getContextPath()}"/>
+    <f:facet name="first">
+        <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+        <link rel="shortcut icon" type="image/png" href="#{path}/LogoJR.png"/>
+        <title>Sismos Mundiales from Java Revolutions</title>
+    </f:facet>
+
+</h:head>
+
+<h:body>
+    <ui:insert name="content">
+        <h1>Default content HELLO</h1>
+    </ui:insert>
+
+    <h:form>
+        <h:commandButton value="Click Me" action="#{myBean.printMessage}" />
+    </h:form>
+
+
+</h:body>
+
+
+
+</html>
