@@ -18,6 +18,6 @@ public class MyBean implements Serializable {
 
   public void printMessage() {
 
-    log.info("Button was clicked! " + testService.getMessage());
+      log.info("Button was clicked! {}", testService.getMessage());
   }
 }

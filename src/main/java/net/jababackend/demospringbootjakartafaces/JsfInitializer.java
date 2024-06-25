@@ -12,13 +12,16 @@ public class JsfInitializer implements ServletContextInitializer {
   @Override
   public void onStartup(ServletContext servletContext) throws ServletException {
     servletContext.setInitParameter("com.sun.faces.forceLoadConfiguration", Boolean.TRUE.toString());
+    servletContext.setInitParameter("primefaces.THEME", "luna-pink");
 
     EnhancedListener cdiInitializer = new EnhancedListener();
     cdiInitializer.onStartup(null, servletContext);
 
     ServletContainerInitializer facesInitializer = new FacesInitializer();
+
     facesInitializer.onStartup(null, servletContext);
   }
+
 
 
 }

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
+
+.user-controls {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+.sidebar {
+    background-color: #666;
+    color: white;
+    padding: 10px;
+}
+
+.content {
+    padding: 10px;
+}
+
+.footer {
+    background-color: #777777;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
